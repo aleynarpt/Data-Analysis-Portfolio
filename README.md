@@ -1,6 +1,7 @@
 # Marketing Performance and ROI Analysis (SQL)
 
-## Project Overview
+## Project Overview ([ViewFullReport](Marketing_Analysis_Results.pdf))
+
 This project focuses on analyzing multi-channel advertising data from **Facebook Ads** and **Google Ads** to evaluate campaign performance, budget efficiency, and business growth. By consolidating fragmented data from different platforms, the analysis provides key performance indicators (KPIs) such as **Return on Marketing Investment (ROMI)** and monthly reach trends.
 
 ---
