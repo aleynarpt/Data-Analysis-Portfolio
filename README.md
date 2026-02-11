@@ -48,5 +48,5 @@ This project focuses on analyzing multi-channel advertising data from **Facebook
 
 ## Project Structure
 - `marketing_analysis.sql` — Contains the optimized SQL queries used for the analysis.
-- - `results/` — Directory containing the query output screenshots as evidence of the analysis.
+- `results/` — Directory containing the query output screenshots as evidence of the analysis.
 
