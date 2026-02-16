@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------
--- 1. SORGU: AD PLATFORM COMPARISON (Facebook vs Google)
+-- QUERY 1: AD PLATFORM COMPARISON (Facebook vs Google)
 -- Amaç: Facebook ve Google reklam harcamalarını tek bir tabloda birleştirip 
 -- günlük bazda ortalama, maksimum ve minimum harcamaları analiz etmek.
 -- Kullanılan Teknikler: CTE (Common Table Expressions), UNION ALL, Aggregation.
@@ -35,7 +35,7 @@ ORDER BY ad_date, media_source;
 
 
 -------------------------------------------------------------------------
--- 2. SORGU: TOTAL ROMI CALCULATION (Daily ROI)
+-- QUERY 2: TOTAL ROMI CALCULATION (Daily ROI)
 -- Amaç: Tüm platformların toplam maliyet ve getirisini hesaplayarak 
 -- günlük ROMI (Yatırım Getirisi) değerini bulmak. En başarılı 5 günü listeler.
 -- Kullanılan Teknikler: COALESCE (NULL yönetimi), LEFT JOIN, Matematiksel Cast İşlemi.
@@ -80,7 +80,7 @@ LIMIT 5;
 
 
 -------------------------------------------------------------------------
--- 3. SORGU: WEEKLY TOP CAMPAIGN PERFORMANCE
+-- QUERY 3: WEEKLY TOP CAMPAIGN PERFORMANCE
 -- Amaç: Haftalık bazda en yüksek geliri getiren kampanyayı tespit etmek.
 -- Kullanılan Teknikler: DATE_TRUNC (Zaman gruplandırma), INNER JOIN, Unified Reporting.
 -------------------------------------------------------------------------
@@ -130,7 +130,7 @@ LIMIT 1;
 
 
 -------------------------------------------------------------------------
--- 4. SORGU: MONTHLY REACH GROWTH ANALYSIS (Window Functions)
+-- QUERY 4: MONTHLY REACH GROWTH ANALYSIS (Window Functions)
 -- Amaç: Kampanyaların aylık erişim (reach) büyümesini bir önceki aya göre analiz etmek.
 -- Kullanılan Teknikler: LAG() Window Function, REGEXP_REPLACE (URL'den veri çekme).
 -------------------------------------------------------------------------
@@ -184,7 +184,7 @@ LIMIT 1;
 
 
 -------------------------------------------------------------------------
--- 5. SORGU: ADSET STREAK ANALYSIS (Gelişmiş Analiz)
+-- QUERY 5: ADSET STREAK ANALYSIS (Gelişmiş Analiz)
 -- Amaç: Bir reklam setinin (adset) kesintisiz olarak kaç gün yayınlandığını (streak) bulmak.
 -- Kullanılan Teknikler: ROW_NUMBER(), Tarih Aritmetiği, Gaps and Islands Mantığı.
 -------------------------------------------------------------------------
